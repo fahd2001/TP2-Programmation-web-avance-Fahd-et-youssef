@@ -6,7 +6,7 @@ import { useAuth } from "../context/AuthContext";
 function Navbar() {
   const { totalItems, clearCart } = useCart();
 
-  // Sécurité : éviter les crashs "cannot destructure"
+  
   const auth = useAuth() || {};
   const user = auth.user || null;
   const logout = auth.logout || (() => {});
