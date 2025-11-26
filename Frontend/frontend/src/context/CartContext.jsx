@@ -1,4 +1,4 @@
-// src/context/CartContext.jsx
+
 import { createContext, useContext, useEffect, useState } from "react";
 
 const CartContext = createContext();
@@ -47,7 +47,6 @@ export function CartProvider({ children }) {
     );
   };
 
-  // 🚨 RESET TOTAL DU PANIER (utilisé lors du login/logout)
   const clearCart = () => {
     setItems([]);
     localStorage.removeItem("cart"); // <-- Ajout important !
