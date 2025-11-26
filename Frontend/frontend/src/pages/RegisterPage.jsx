@@ -22,7 +22,7 @@ function RegisterPage() {
       return;
     }
 
-    alert("✅ Inscription réussie !");
+    alert("Inscription réussie !");
     window.location.href = "/login";
 
   } catch (err) {
