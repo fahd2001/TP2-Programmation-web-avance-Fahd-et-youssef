@@ -1,4 +1,4 @@
-// Backend/models/auth.model.js
+
 const pool = require("../config/db");
 
 async function registerUser(nom, email, hashedPassword) {
