@@ -3,17 +3,17 @@ const cors = require("cors");
 require("dotenv").config();
 
 const ouvragesRoutes = require("./routes/ouvrages.routes");
-const authRoutes = require("./routes/auth.routes");   // <-- AJOUT
+const authRoutes = require("./routes/auth.routes");   
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.use("/api/ouvrages", ouvragesRoutes);
-app.use("/api/auth", authRoutes);  // <-- AJOUT ✔
+app.use("/api/auth", authRoutes);  
 
 app.get("/", (req, res) => {
-    res.send("API livresgourmands.net opérationnelle ✔");
+    res.send("API livresgourmands.net opérationnelle ");
 });
 
 const PORT = process.env.PORT || 3000;
@@ -23,7 +23,7 @@ const paymentRoutes = require("./routes/payment.routes");
 app.use("/api/payment", paymentRoutes);
 
 app.listen(PORT, () => {
-    console.log("🔥 API en marche sur le port " + PORT);
+    console.log("API en marche sur le port " + PORT);
 });
 
 
