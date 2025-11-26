@@ -1,0 +1,26 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 3rem 1rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+}
+
+.book-card-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
