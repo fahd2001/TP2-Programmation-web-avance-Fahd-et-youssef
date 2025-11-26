@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useAuth } from "../context/AuthContext";     // <-- AJOUT
-import { useCart } from "../context/CartContext";      // <-- AJOUT
+import { useAuth } from "../context/AuthContext";     
+import { useCart } from "../context/CartContext";      
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -30,12 +30,12 @@ function LoginPage() {
       login(data.user, data.token);  // save user + token dans AuthContext
       clearCart();                   // reset panier pour nouvel utilisateur
 
-      alert("✅ Connexion réussie !");
+      alert("Connexion réussie !");
       window.location.href = "/";
 
     } catch (err) {
       console.error(err);
-      alert("❌ Erreur serveur");
+      alert("Erreur serveur");
     }
   };
 
