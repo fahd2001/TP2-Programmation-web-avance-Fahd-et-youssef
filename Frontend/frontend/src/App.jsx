@@ -6,7 +6,7 @@ import NotFoundPage from "./pages/NotFoundPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import ProductPage from "./pages/ProductPage.jsx";
 
-// ⭐ IMPORT QUI MANQUAIT
+
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 
