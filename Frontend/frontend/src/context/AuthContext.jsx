@@ -35,7 +35,7 @@ export function AuthProvider({ children }) {
   );
 }
 
-// ⭐ EXPORT DU HOOK — TRÈS IMPORTANT
+
 export function useAuth() {
   return useContext(AuthContext);
 }
