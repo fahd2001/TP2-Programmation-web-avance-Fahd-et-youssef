@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import { Link, NavLink } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
