@@ -61,8 +61,8 @@ exports.login = async (req, res) => {
 };
 
 exports.login = async (req, res) => {
-    console.log("📩 Email reçu :", req.body.email);
-    console.log("🔐 Password reçu :", req.body.password);
+    console.log("Email reçu :", req.body.email);
+    console.log("Password reçu :", req.body.password);
 
     const { email, password } = req.body;
 
